@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: #124;
+  margin: auto 0;
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+header article img {
+  width: 50px;
+}/*# sourceMappingURL=style.css.map */
