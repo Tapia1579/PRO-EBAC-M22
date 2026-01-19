@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TAG Descripcion (contenido de la pagina)-->
     <meta
       name="description"
@@ -16,32 +16,75 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- TAG Style -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- TAG Events -->
+    <script src="js/app.js" async></script>
     <!-- TAG Favicon (icon nex to the windows)-->
     <link rel="icon" type="img/x-icon" href="" />
     <!-- TAG Title -->
     <title>Adidas-Shop</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <article>
-            <i><img src="img/header/menu-align-justify.svg" alt="menu"></i>
+      <section class="h__menu container">
+        <!-- menu - logo - nav - shop-->
+        <article class="h__slide">
+          <i><img src="img/header/menu-align-justify.svg" alt="menu" /></i>
         </article>
 
-        <article class="header__logo">
-            <i><img src="img/header/adidas_head.svg" alt="logo"></i>
-        </article>
-        
         <article>
-            <i><img src="img/header/shoppingCart.svg" alt="shop"></i>
+          <i><img src="img/header/adidas_head.svg" alt="logo" /></i>
         </article>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Help</a>
+        </nav>
+
+        <article class="h__shop">
+          <i><img src="img/header/shoppingCart.svg" alt="shop" /></i>
+          <article class="h__cont">
+            <span>0</span>
+          </article>
+        </article>
+      </section>
+
+      <section class="port container">
+        <!-- slogan - port -->
+        <article class="port__h">
+          <h1>Viste con estilo</h1>
+        </article>
+        <article class="port__p">
+          <img src="img/header/people" alt="people" />
+        </article>
+      </section>
     </header>
 
-    <main>
-        
-    </main>
-    
-</body>
+    <main class="allPro container">
+      <h2>Compra todo lo que puedas</h2>
 
+      <section class="container__p">
+        <article class="product">
+            <i><img src="img/header/shoes_icon_logo.png" alt=""></i>
+            <h3>Chaqueta Star-Temp</h3>
+            <p><span>$</span>1,099.00</p>
+            <button class="add__shop">Agregar al carrito</button>
+        </article>
+
+
+      </section>
+    </main>
+
+
+
+  </body>
 </html>
+<!-- <article>
+          <a href="#"> <img src="img/ropa_img/gorra-black.jpg" alt="gorraAdidas"/></a>
+          <h3>Producto</h3>
+          <p>$ 0,000.00</p>
+          <h4>Originals</h4>
+        </article> -->

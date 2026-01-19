@@ -1,24 +1,118 @@
-//body 
-
 //html
 html {
     scroll-behavior: smooth;
 }
 
-//header
+//header content parent
 header {
     width: 100%;
     height: auto;
     background-color: #124;
-    margin: auto 0;
-    padding: 10px;
-    display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
 
-    article {
+    // content items menu/port
+    .container {
+        width: 1200px;
+        margin: auto;
+
         img {
             width: 50px;
         }
     }
+
+    .h__menu {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        box-sizing: border-box;
+
+        .h__slide {
+            display: none;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                padding: 20px;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .h__shop {
+            display: block;
+            width: 50px;
+            height: 40px;
+            margin-right: 30px;
+            cursor: pointer;
+            position: relative;
+
+            .h__cont {
+                display: flex;
+                background-color: #000;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                justify-content: center;
+                top: 30px;
+                right: 0;
+                border-radius: 50%;
+
+                span {
+                    color: #fff;
+                    line-height: 21px;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .port {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .port__h {
+            width: 600px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 5rem;
+                padding-bottom: 100px;
+                color: #fff;
+            }
+        }
+
+        .port__p {
+            width: 400px;
+            height: 500px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+// Products
+main {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgb(61, 68, 82);
 }
